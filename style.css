@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    display: block;
+}
+
+.header {
+   text-align: center;
+   margin: 200px 0 auto; 
+}
+.subhead {
+    margin: 20px;
+    text-align: center;
+}
+.city-info-wrapper {
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.enter-city-text {
+    display: block;
+}
+form {
+    position: relative;
+    line-height: 1.5em;
+    text-align: center;
+}
+.btn {
+   position: relative;
+   margin: 8px auto;
+   text-align: center;
+}
