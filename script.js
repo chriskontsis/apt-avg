@@ -1,12 +1,20 @@
+let ticker = "BTC";
+let itemId;
 
+async function formdata() {
+   const tickerInfo = await document.getElementById("ticker-txt").value;
+   event.preventDefault();
+   const response = await fetch('https://api.coinpaprika.com/v1/tickers');
+   const json = await response.json();
+   const userInputTickerId = await findTicker(json, tickerInfo);
+   console.log(userInputTickerId);
+}
 
-fetch('https://api.coinpaprika.com/v1/tickers')
-    .then(res => res.json())
-    .then((info) => {
-        info.forEach(item => {
-            if(item.symbol == "BTC") {
-                console.log(item);
-            }
-        });   
-    });
+function findTicker(json, tickerInfo) {
+    for(let key of json) {
+       if(key.symbol == tickerInfo) {
+        return key.id;
+       }
+    }
+}
 
