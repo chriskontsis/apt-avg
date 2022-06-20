@@ -21,7 +21,14 @@ async function formdata() {
    const json = await response.json();
    tickerId = await findTicker(json, tickerInfo); 
    let data = await cryptoPage(tickerId);
-    console.log(data)
+    sessionStorage.setItem("jsArray",JSON.stringify(dataArr));
+    
+   return new Promise(function(resolve,reject){
+    if(data.percent_change_1y != "") {
+        resolve(window.location = 'http://127.0.0.1:5500/crypto.html');
+    }
+    reject("ERROR LOADING DATA ARRAy");
+   })
   
   
 }
