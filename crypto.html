@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body onload=setInfo()>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="setInfo()">
+    <div id="crypto-page">
+      <div id="info">
+        <div class="contents">
+          <h3 id="coinName" class="adjust"></h3>
+          <h4 id="symbol" class="adjust"></h4>
 
-    <div id="info">
-        <h3 id="coinName"></h3>
-        <h4 id="symbol"></h4>
-        <h4 id="price"></h4>
-        <h4 id="volume_24h"></h4>
-        <h4 id="mkt_cap"></h4>
-        <h4 id="pctchange1hr"></h4>
-        <h4 id="pctchange24hr"></h4>
-        <h4 id="pctchange30day"></h4>
-        <h4 id="pctchange1yr"></h4>
+        <div class="top-contents">
+            <div class="top-contents-container">
+                <h4 id="price" class="adjust2"></h4>
+                <h4 id="volume_24h" class="adjust2"></h4>
+                <h4 id="mkt_cap" class="adjust2"></h4>
+            </div>
+        </div>
+
+          <div class="pct-changed">
+            <div class="pct-container">
+              <h4 id="pctchange1hr" class="adjust2"></h4>
+              <h4 id="pctchange24hr" class="adjust2"></h4>
+              <h4 id="pctchange30day" class="adjust2"></h4>
+              <h4 id="pctchange1yr" class="adjust2"></h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-
-    <script src="crytpo.js" >
-    </script>
-</body>
+    <script src="crytpo.js"></script>
+  </body>
 </html>

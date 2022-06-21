@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,15 +7,45 @@
 }
 #landing-page {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
 }
 button {
     display: block;
 }
+.container {
+    top: 50%;
+    height: 200px;
+    width: 400px;
+    margin: 0 auto;
+}
+.border {
+    background: rgba(255,255,255,0.3);
+    padding: 3em;
+    height: 320px;
+    border-radius: 20px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 
+}
 .header {
    text-align: center;
-   margin: 200px 0 auto; 
+   margin:auto; 
+   color: white;
+   font-size: 50px;
+    
 }
 .subhead {
     margin: 20px;
@@ -37,4 +69,102 @@ form {
    position: relative;
    margin: 8px auto;
    text-align: center;
+}
+
+.txt-area {
+    text-align: center;
+    background: transparent;
+    width: 150px;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: none;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.submit-btn{
+    background: transparent;
+    width: 200px;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.submit-btn:hover{
+    transform: scale(1.07);
+}
+
+
+/* CRYPTO HTML STYLING */
+
+#crypto-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
+}
+#info {
+    background: rgba(255,255,255,0.3);
+    padding: 3em;
+    border-radius: 20px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contents {
+    margin: 10px 10px auto;
+}
+.adjust {
+    padding-bottom: 10px;
+    font-size: 42px;
+    text-align: center;
+    color: white;
+}
+.adjust2 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    word-spacing: 1rem ;
+    text-align: left;
+}
+#symbol {
+    font-size: 36px;
+}
+.pct-changed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.top-contents-container {
+    word-spacing: 2px;
 }
